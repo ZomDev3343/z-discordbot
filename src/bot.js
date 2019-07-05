@@ -17,7 +17,7 @@ Client.on('ready', () =>
 
 Client.on('message', msg =>
 {
-    if(msg.channel.name === "commandstest")
+    if(msg.channel.name === "commands" || msg.channel.name === "commandstest")
     {
         Notif.parse(msg);
         NoNotif.parse(msg);
