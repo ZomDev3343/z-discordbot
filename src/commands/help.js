@@ -24,6 +24,7 @@ module.exports = class HelpCommand extends Command
         .addField("$subscribe", "Vous permet de vous abonner à la chaîne YouTube ( ce qui est quand même vachement bien :stuck_out_tongue: )")
         .addBlankField();
         message.author.send(help);
+        message.delete();
     }
 
 }

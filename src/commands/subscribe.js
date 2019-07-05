@@ -16,6 +16,7 @@ module.exports = class SubscribeCommand extends Command
     {
         message.author.createDM();
         message.author.send("Abonne-toi en cliquant sur le lien, c'est gratuit ;)\nhttps://www.youtube.com/channel/UCdjw-3EI4xgOe341MJEiYmg?view_as=subscriber?sub_confirmation=1")
+        message.delete();
     }
 
 }
