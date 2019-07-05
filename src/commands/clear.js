@@ -6,7 +6,7 @@ module.exports = class ClearCommand extends Command
     static match(message)
     {
         let notifRole = message.guild.roles.find('name', "Admin");
-        if(message.content.startsWith("$clear") && message.member.roles.has(notifRole.id))
+        if(message.content.startsWith("$clear") && (message.member.roles.has(notifRole.id) || message.channel.type === "dm" || message.channel.type === "group"))
         {
             return true;
         }

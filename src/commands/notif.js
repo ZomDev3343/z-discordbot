@@ -7,7 +7,7 @@ module.exports = class NotifCommand extends Command
     static match(message)
     {
         let notifRole = message.guild.roles.find('name', "Notif");
-        if(message.content === "$notif" && !message.member.roles.has(notifRole.id))
+        if(message.content === "$notif" && !message.member.roles.has(notifRole.id) && message.channel.type === "text")
         {
             return true;
         }
