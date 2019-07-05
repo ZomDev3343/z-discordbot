@@ -1,0 +1,14 @@
+{
+    "name": "z-bot",
+    "version": "0.1",
+    "description": "",
+    "main": "src/bot.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit1"
+    },
+    "author": "Zom'",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^11.5.1"
+    }
+}
