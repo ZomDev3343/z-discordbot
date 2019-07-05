@@ -12,7 +12,7 @@ const Subscribe = require('./commands/subscribe')
 
 Client.on('ready', () =>
 {
-    Client.user.setActivity("Commandes $help");
+    Client.user.setActivity("Commandes $help #commands");
 });
 
 Client.on('message', msg =>
