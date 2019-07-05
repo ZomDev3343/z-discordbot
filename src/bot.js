@@ -6,7 +6,7 @@ const Client = new Discord.Client();
 
 const Notif = require("./commands/notif")
 const NoNotif = require("./commands/nonotif")
-
+const Clear = require("./commands/clear")
 
 Client.on('ready', () =>
 {
@@ -19,6 +19,7 @@ Client.on('message', msg =>
     {
         Notif.parse(msg);
         NoNotif.parse(msg);
+        Clear.parse(msg);
     }
 })
 
